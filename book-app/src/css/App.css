@@ -5,6 +5,7 @@
 }
 
 .navbar {
+  padding: 50px;
   width: 100%;
   height: 10vh;
   background-color: black;
@@ -56,6 +57,7 @@
   margin-top: 2em;
 }
 .book button {
+  width: 180px !important;
   margin-top: 2em;
   padding: 10px;
   background-color: rgb(71, 97, 225);
@@ -64,4 +66,25 @@
   border: none;
   cursor: pointer;
   border-radius: 4px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.favorites {
+  min-height: 80vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.book-details {
+  min-height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px;
 }/*# sourceMappingURL=App.css.map */
