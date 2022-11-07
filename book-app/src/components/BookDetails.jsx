@@ -24,21 +24,21 @@ const BookDetails = () => {
     <div className='book-details'>
 
       <div className='book-image'>
-        <h2>{book.title}</h2>
-        <img src={book?.image_url} alt="Book Image" />
+        <h2 className='book-title'>{book.title}</h2>
+        <img src={book?.image_url} alt="Book Image"/>
       </div>
 
       <div>
-        <h2>
+        <h2 className='label'>
           Description
         </h2>
-        <p>
+        <p className='child'>
           {book?.description}
         </p>
-        <h2>Authors</h2>
-        <p>{book?.authors}</p>
-        <h2>Genres</h2>
-        <p>{book?.genres}</p>
+        <h2 className='label'>Authors</h2>
+        <p className='child'>{book?.authors}</p>
+        <h2 className='label'>Genres</h2>
+        <p className='child'>{book?.genres}</p>
       </div>
 
     </div>

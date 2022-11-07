@@ -11,7 +11,7 @@ const Navbar = () => {
         </div>
 
        <div>
-        <Link to="/favorites"><p>Your Favorites</p></Link>
+        <Link to="/favorites"><p>Favorites</p></Link>
       </div>
 
         </div>

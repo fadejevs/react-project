@@ -1,6 +1,7 @@
 import React from 'react'
 import '../App';
 import { useAppContext } from "./context/appContext";
+import { useNavigate } from "react-router-dom";
 
 
 
@@ -16,6 +17,9 @@ const Favorites = () => {
   };
 
 
+  const navigate = useNavigate();
+
+
   return (
     <div className='favorites'>
       {favorites.length > 0 ? favorites.map((book) => (
@@ -24,7 +28,7 @@ const Favorites = () => {
             <h3>{book.title}</h3>
           </div>
           <div>
-            <img src={book.image_url} alt="Book Image"></img>
+            <img src={book.image_url} alt="Book Image" onClick={()=> navigate(`/books/${book.id}`)}></img>
           </div>
 
           {favoritesChecker(book.id) ? (

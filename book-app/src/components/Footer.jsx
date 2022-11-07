@@ -5,7 +5,7 @@ import '../App';
 const Footer = () => {
   return (
     <div className='footer'>
-        <p>Books App 2022&copy;</p>
+        <p>GoodReads App 2022&copy;</p>
     </div>
   )
 }

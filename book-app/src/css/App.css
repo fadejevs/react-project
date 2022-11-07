@@ -8,17 +8,21 @@
   padding: 50px;
   width: 100%;
   height: 10vh;
-  background-color: black;
+  background-color: rgb(88, 112, 109);
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+.navbar p {
+  text-transform: uppercase;
+  font-weight: bold;
+}
 
 .footer {
   width: 100%;
   height: 10vh;
-  background-color: black;
+  background-color: rgb(88, 112, 109);
   color: white;
   display: flex;
   align-items: center;
@@ -31,6 +35,10 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
+  background-color: rgb(25, 25, 25);
+  color: white;
+  padding-bottom: 5em;
+  padding-top: 5em;
 }
 
 .book {
@@ -46,22 +54,25 @@
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
+  border: 2px solid yellow;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
 .book img:hover {
+  rotate: 2deg;
   transform: scale(1.1);
 }
 .book h3 {
-  margin-bottom: 1em;
+  margin-bottom: 1.4em;
   margin-top: 2em;
 }
 .book button {
   width: 180px !important;
   margin-top: 2em;
   padding: 10px;
-  background-color: rgb(71, 97, 225);
-  color: white;
+  background-color: rgb(219, 219, 219);
+  color: black;
   width: 100%;
   border: none;
   cursor: pointer;
@@ -80,11 +91,25 @@ a {
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
 }
+.favorites h1 {
+  margin-left: 3em;
+  margin-top: 3em;
+}
 
 .book-details {
   min-height: 80vh;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  padding: 15px;
+  padding: 3em;
+}
+.book-details .book-title {
+  padding: 1em;
+}
+.book-details .label {
+  padding: 1em;
+}
+.book-details .child {
+  padding: 1em;
+  width: 700px;
 }/*# sourceMappingURL=App.css.map */
